@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Pescado";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title -</h1>
+                <h2>finding the best pescatarian places.</h2>
+            </hgroup>
+            <p>
+                Having tried to be vegetarian, vegan, paleo, etc... I decided to create a pescatarian application to find good fish restaurants where I live.
+            Let me know if you have any ideas or suggestions.  You can learn more about it <a href="http://en.wikipedia.org/wiki/Pescetarianism">here</a>
+            </p>
+        </div>
+    </section>
+}
+<h3>We suggest the following:</h3>
+<div ng-app="pescadoApp">
+    <div ng-cloak>
+        <h3>Our current top 5 restaurants</h3>
+        <ol class="round" ng-controller="MainCtrl" ng-show="restaurants">
+            <li ng-repeat="restaurant in restaurants">
+                <h5 ng-bind="restaurant.Name"></h5>
+                <div ng-bind="restaurant.Description"></div>
+                <a href="{{restaurant.Url}}">Learn more…</a>
+            </li>
+        </ol>
+    </div>
+</div>
