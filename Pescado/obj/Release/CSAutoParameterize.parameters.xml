@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-Pescado-20140927192421;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-Pescado-20140927192421.mdf" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\John\\Documents\\GitHub\\Pescado\\Pescado\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-  <parameter name="PescadoConnection-Web.config Connection String" description="PescadoConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=C:\Users\John\Documents\GitHub\Pescado\Pescado\App_Data\Pescado.sdf" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\John\\Documents\\GitHub\\Pescado\\Pescado\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PescadoConnection']/@connectionString" />
-  </parameter>
-</parameters>
