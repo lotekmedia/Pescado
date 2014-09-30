@@ -4,9 +4,7 @@
 
     var MainCtrl = function ($scope,$http) {
 
-        $scope.message = 'hello angular';
-
-        var onRestaurantComplete = function (response) {
+       var onRestaurantComplete = function (response) {
             $scope.restaurants = response.data;
         }
 
