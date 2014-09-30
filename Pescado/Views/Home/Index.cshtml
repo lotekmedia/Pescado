@@ -23,7 +23,7 @@
             <li ng-repeat="restaurant in restaurants">
                 <h5 ng-bind="restaurant.Name"></h5>
                 <div ng-bind="restaurant.Description"></div>
-                <a href="{{restaurant.Url}}">Learn more…</a>
+                <a ng-src="{{restaurant.Url}}">Learn more…</a>
             </li>
         </ol>
     </div>
